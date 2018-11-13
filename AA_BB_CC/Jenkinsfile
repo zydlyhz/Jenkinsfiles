@@ -1,0 +1,15 @@
+node {
+ 
+stage ('File create') {
+build job: 'AA', parameters: [string(name: 'File', value: File_P)]
+                      }
+ 
+stage ('File modify') {
+build job: 'BB', parameters: [string(name: 'File', value: File_P)]
+                      }
+ 
+stage ('File delete') {
+build job: 'CC', parameters: [string(name: 'File', value: File_P)]
+                      }
+     }
+
