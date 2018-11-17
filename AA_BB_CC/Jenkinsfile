@@ -1,3 +1,4 @@
+
 node {
 try       {currentBuild.result = "SUCCESS"
 stage ('File create') {build job: 'AA', parameters: [string(name: 'File', value: File_P)]}
