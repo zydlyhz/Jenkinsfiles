@@ -26,4 +26,5 @@ if ('FAILURE'.equals(currentBuild.result.toString())) {
                       to: 'zt9074@gmail.com'
 
               )
-
+						       }
+		}
